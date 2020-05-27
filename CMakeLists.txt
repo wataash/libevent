@@ -172,6 +172,7 @@ endif()
 if (EVENT__ENABLE_VERBOSE_DEBUG)
     add_definitions(-DUSE_DEBUG=1)
 endif()
+add_definitions(-DUSE_DEBUG=1)
 
 # make it colorful under ninja-build
 if ("${CMAKE_GENERATOR}" STREQUAL "Ninja")
